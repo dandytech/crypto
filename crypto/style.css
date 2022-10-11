@@ -1,0 +1,1237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(2, 2, 39);
+    font-family: 'Poppins', sans-serif;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        width: 100%;
+        height: 100px;
+        padding: 20px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+ @media(max-width: 1000px){
+    .header{
+        margin-bottom: 200px;
+        overflow-x: hidden !important;
+    }
+    .header .logo{
+        width: 40%;
+    }
+    .header .menu{
+        display: none;
+    }
+    .header .icon{
+        display: block;
+    }
+ }
+
+    .logo{
+        width: 10%;
+    }
+    .menu{
+        width: 40%;
+    }
+    .header ul{
+        display: flex;
+    }
+    .header li{
+        width: 100px;
+    }
+    .header a{
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .header a:hover{
+        color: blue;
+    }
+    .header .register{
+        background-color: blue !important;
+        padding: 20px;
+        border-radius: 40px;
+    }
+    .header .register:hover{
+        color: green;
+    }
+.icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 30px;
+    display: none;
+}
+
+/*Hidden header*/
+.header2{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background: rgb(2, 2, 39);
+    font-family: 'Poppins', sans-serif;
+    z-index: 100;
+    text-align: center;
+    display: none;
+    padding: 20px;
+    animation: menu2 1s ease-in;
+}
+@keyframes menu2{
+    From{right:-300px;}
+    to{right: 0;}
+}
+
+
+.header2 li{
+margin-top: 20px;
+}
+.header2 a{
+    color: white;
+    font-size: 18px;
+}
+.header2 button{
+    width: 30%;
+    border-radius: 40px;
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 5px 10px 5px 10px;
+}
+.logo3{
+    width: 50%;
+}
+.close_Icon{
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 30px;
+}
+
+
+/*section 1 */
+.section_1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.fast_and_secure{
+    width: 50%;
+    padding: 10px;
+    margin-top: -180px;
+}
+.imgRight{
+    width: 50%;
+    padding: 10px;
+}
+
+/* animation*/
+.ani_1{
+    transform: scale(0.3);
+    opacity: 0;
+}
+.ani_1.active{
+    transition: 2s all ease;
+    transform: scale(1);
+    opacity: 1;
+}
+.ani_2{
+    transform: scale(0.3);
+    opacity: 0;
+}
+.ani_2.active{
+    transition: 2s all ease;
+    transform: scale(1);
+    opacity: 1;
+}
+.percentage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    border-radius: 30px;
+    background-color: rgb(130, 122, 135);
+    margin-bottom: 20px;
+}
+.percent{
+    border-radius: 30px;
+    width: 26%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    padding: 15px;
+
+}
+.percentText{
+    width:70%;
+    font-size: 14px;
+    color: white;
+}
+.fast_secureText{
+    width: 45%;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    line-height: 50px;
+}
+.fast_secureText2{
+    width: 100%;
+    color: white;
+    padding-top: 20px;
+}
+.try{
+    background-color: blue;
+    color: white;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 30px;
+    padding: 15px;
+    margin-top: 20px;
+}
+.tryText{
+    width: 70%;
+}
+.tryIcon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+}
+
+@media(max-width: 1000px){
+    .section_1{
+        display: block;
+    }
+    .fast_and_secure,
+    .imgRight{
+        width: 100%;
+    }
+    .percentage{
+        width:85%;
+        justify-content: flex-start;
+    }
+    .percent{
+        width: auto;
+        font-size: 10px;
+    }
+    .percentText{
+        width: auto;
+        font-size: 10px;
+        margin-left: 7px;
+    }
+    .fast_secureText,
+    .fast_secureText2{
+        width: 100%;
+        padding: 10px;
+    }
+    .try{
+        width: 70%;
+        height: 50px;
+        padding: 10px;
+        font-size: 14px;
+    }
+    .imgRight{
+        padding: 10px;
+    }
+    
+}
+
+/*section 2 */
+.section_2{
+    width: 100%;
+    margin: auto;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   }
+   
+   /*Animation start */
+   .section_2_ani{
+    position: relative;
+   margin-top: 600px; /*Animation purpose */
+
+   }
+.section_2_ani.active{
+    transition: 2s all ease;
+    margin-top: 0px;
+}
+.section_2_box{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section_2_Icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(130, 122, 135);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: blue;
+}
+.section_2_Text{
+width: auto;
+color: white;
+}
+@media(max-width:1000px){
+    .section_2{
+        display: block;
+    }
+   
+    .section_2_box{
+        width: 80%;
+        margin-top: 30px !important;
+        margin-left: 10px;
+    }
+}
+
+/*section 3 */
+.section_3{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    color: white;
+    /* for animation purpose */
+    overflow-x: hidden !important;
+}
+
+/* for  animation */
+.section_3_anim1{
+    position: relative;
+    left: -800px;
+}
+.section_3_anim1.active{
+    transition: 2s all ease;
+    left: 0;
+}
+.section_3_anim2{
+    position: relative;
+    right: -800px;
+    opacity: 0;
+}
+.section_3_anim2.active{
+    transition: 2s all ease;
+    right: 0;
+    opacity: 1;
+}
+/*Animation end */
+
+
+.section_3_img{
+    width: 75%;
+}
+
+.sction_3_Text{
+    width: 25%;
+    color: white;
+}
+
+.section_3_Text1{
+    width: 70%;
+    font-size: 24px;
+}
+.section_3_Text2{
+    font-size: 17px;
+    width: 100%;
+    margin-top: 20px;
+}
+.section_3_Try{
+    background-color: blue;
+    color: white;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 30px;
+    padding: 15px;
+    margin-top: 20px;
+}
+.section_3_Text{
+    width: 70%;
+}
+.section_3_Icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+}
+@media(max-width:1000px){
+    .section_3{
+       flex-direction: column-reverse;
+        margin-top: 150px;
+    }
+    .section_3_img{
+        width: 100%;
+    }
+    .section_3_Text{
+        width: 100%;
+    }
+    .section_3_Text1{
+        width: 100%;
+        font-size: 16px;
+        margin-top: 30px;
+        padding: 10px;
+    }
+    .section_3_Text2{
+        width: 100%;
+        padding: 10px;
+    }
+    .section_3_Try{
+        width: 70%;
+        height: 50px;
+        padding: 15px;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+}
+
+/*section 4 */
+.check{
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    /*For animation*/
+    position: relative;
+    transform: scale(0.5);
+}
+.check.active{
+    transition: 2s all ease;
+    transform: scale(1);
+}
+
+.check h1{
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+.check p{
+    line-height: 25px;
+}
+.checkBox{
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    height: 600px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 40px; 
+    /*For animation*/
+    position: relative;
+    transform: scale(0.5);
+}
+.checkBox.active{
+  transition: 2s all ease;
+  transform: scale(1);
+}
+
+.checkBox input{
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid black !important;
+}
+.checkBox input:focus, .checkBox select:focus{
+    outline: none !important;
+}
+.checkBox select{
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    font-size: 24px;
+    border: none;
+    margin-top: 50px;
+    background-color: rgb(230, 210, 187);
+}
+.calculate{
+    width: 10%;
+    padding: 15px;
+    border-radius: 40px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    color: white;
+    margin-top: 50px;
+    /*For animation */
+    position: relative;
+    top: 100px;
+}
+.calculate.active{
+    transition: 3s all ease;
+    top: 0px;
+}
+
+.estimate{
+    margin-top: 50px;
+    color: blue;
+    font-size: 20px;
+}
+.eth{
+    margin-top: 40px;
+    font-size: 30px;
+}
+.dollar{
+    color: blue;
+    margin-top: 40px;
+    font-size: 30px;
+}
+.revenue{
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+@media(max-width:1000px) {
+    .check{
+        width: 100%;
+    }
+    .calculate{
+        width: 40%;
+    }
+    .check h1{
+        font-size: 34px;
+
+    }
+}
+
+
+/*section 5 */
+.trade{
+    width: 100%;
+    height: 950px;
+    background-color: rgb(250, 250, 250);
+    margin-top: -250px;
+    padding-top: 300px;
+}
+.tradeText{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+}
+.tradeBoxHolder{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+.tradeBox{
+    width: 34%;
+    height: 500px;
+    border-radius: 20px;
+    background-color: navy;
+    padding: 50px;
+    text-align: center !important;
+}
+.hover{
+    background-color: white !important;
+}
+.hover:hover{
+    background-color: navy !important;
+}
+.tradeBox_Icon{
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+.tradeBox_Bitcon{
+    width: 100%;
+    height: 100px;
+    color: white;
+    margin-top: 50px;
+}
+.tradeBox_Bitcon sup{
+    font-size: 15px;
+}
+.tradeBox_Text{
+    color: white;
+    width: 100%;
+    margin-top: -20px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+.startMining{
+    width: 40%;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: blue;
+    padding: 15px;
+}
+
+
+.tradeBox:hover>.startMining{
+    background-color: blue;
+    color:white;
+}
+
+@media(max-width:1000px){
+    .trade{
+        height: auto !important;
+    }
+    .tradeText, .tradeBox{
+        width: 100%;
+        padding: 5px;
+    }
+    .tradeBox{
+        margin-top: 50px;
+    }
+    .tradeBoxHolder{
+        display: block;
+        height: auto;
+    }
+   
+}
+
+/*box 2 */
+.tradeBox2_Icon{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+  }
+  .tradeBox_Etherum{
+      width: 100%;
+      height: 100px;
+      margin-top: 50px;
+  }
+  .tradeBox_Etherum sup{
+      font-size: 15px;
+  }
+  .tradeBox2_Text{
+      width: 100%;
+      height: 150px;
+      margin-top: -20px;
+      font-size: 20px;
+      font-weight: lighter;
+      padding: 10px;
+      position: relative;
+  }
+  .startMining_2{
+    width: 40%;
+    margin: auto;
+    margin-top: -40px;
+    border-radius: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    padding: 20px;
+    display: none;
+    position: relative;
+
+  }
+  .start_Mining_Hold{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .startMining_Icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border: 1px solid grey;
+  }
+
+
+  .tradeBox:hover>.startMining_2{
+    display: block;
+    z-index: 1000 !important;
+  }
+ 
+  /*box 3 */
+  .tradeBox3_Icon{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+  }
+  .tradeBox_Crypto{
+      width: 100%;
+      height: 100px;
+      margin-top: 50px;
+  }
+  .tradeBox_Crypto sup{
+      font-size: 15px;
+  }
+  .tradeBox3_Text{
+      width: 100%;
+      height: 150px;
+      margin-top: -20px;
+      font-size: 20px;
+      font-weight: lighter;
+      padding: 10px;
+      position: relative;
+  }
+  .startMining_3{
+      width: 40%;
+      margin: auto;
+      margin-top: -60px;
+      border-radius: 40px;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: blue;
+      padding: 20px;
+      display: none;
+      position: relative;
+
+  }
+  .startMining_3_Icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border: 1px solid grey;
+  }
+  .tradeBox:hover>.startMining_3{
+    display: block;
+    z-index: 1000 !important;
+  }
+
+ /*section 6 */
+ .make_Sentimate{
+    width: 100%;
+    height: 500px;
+    position: relative;
+ }
+ .make_Text{
+    width: 50%;
+    margin: auto;
+    color: white;
+    padding-top: 50px;
+    /*For animation */
+    position: relative;
+    top:200px;
+ }
+ .make_Text.active{
+    transition: 2s all ease;
+    top:0px;
+ }
+
+ .make_Sentimate_Holder{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+ }
+ .make_Sentimate_Box{
+    width: 50%;
+    color: white;
+    padding: 20px;
+    margin-top: 50px;
+ }
+ .make_ani{
+    /*For animation */
+    position: relative;
+    top: 200px;
+}
+.make_ani.active{
+    transition: 2s all ease;
+    top: 0px;
+}
+ 
+ .make_Sentimate_Box p{
+    width: 70%;
+    margin-top: 40px;
+ }
+ .learn_More{
+    width: 25%;
+    border-radius: 40px;
+    background-color: blue;
+    font-size: 24px;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+/*Animation */
+.ani_Img{
+    transform: scale(0.5);
+}
+.ani_Img.active{
+    transition: 3s all ease;
+    transform: scale(1);
+}
+
+ 
+
+@media(max-width:1000px){
+    
+    .make_Sentimate{
+        height: auto;
+    }
+    .make_Text{
+        width: 100% !important;
+        padding: 10px;
+        text-align: center;
+    }
+    .make_Sentimate_Holder{
+        display: block;
+    }
+    .make_Sentimate_Box{
+        width: 100%;
+    }
+    .make_Sentimate_Box p{
+        width: 95%;
+        line-height: 30px;
+        font-size: 18px;
+    }
+    .learn_More{
+        width: 60% !important;
+        padding: 10px !important;
+        font-size: 20px !important;
+    }
+    .make_Sentimate_Box img{
+        width: 100%;        margin-top: -30px;
+    }
+}
+ 
+ /*section 7 */
+ .detailed_Stat{
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+ }
+ .make_Text{
+    width: 50%;
+    margin: auto;
+    color: white;
+    padding-top: 50px;
+ }
+ .holder1{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+ }
+ .detailed_Stat_Holder{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+ }
+ .detailed_Stat_Box{
+    width: 100%;
+    color: white;
+    padding: 20px;
+    margin-top: 50px;
+
+ }
+ .detailed_Stat_Box p{
+    width: 100%;
+    margin-top: 40px;
+ }
+ .learn_More{
+    width: 25%;
+    border-radius: 40px;
+    background-color: blue;
+    font-size: 24px;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+ }
+/*Animation */
+.ani2_Img{
+    transform: scale(0.5);
+}
+.ani2_Img.active{
+    transition: 3s all ease;
+    transform: scale(1);
+}
+.ani_p{
+   position: relative;
+   top: -200px; 
+}
+.ani_p.active{
+    transition: 2s all ease;
+    top: 0px;
+}
+.learn_2{
+    position: relative;
+    top: 200px; 
+ }
+ .learn_2.active{
+     transition: 2s all ease;
+     top: 0px;
+ }
+
+
+ @media (max-width:1000px){
+    .detailed_Stat{
+        height: auto;
+    }
+    .detailed_Stat_Holder{
+        margin-top: -80px;
+        flex-direction: column-reverse;
+      
+    }
+    
+ }
+
+ /* section 8 */
+  .grow{
+    width: 100%;
+    height: 500px;
+ }
+
+ .grow_Holder{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 70px;
+ }
+ .grow_Box{
+    width: 50%;
+    color: white;
+    padding: 20px;
+    margin-top: 50px;
+
+ }
+ .grow_Box p{
+    width: 70%;
+    margin-top: 40px;
+ }
+ .learn_More{
+    width: 25%;
+    border-radius: 40px;
+    background-color: blue;
+    font-size: 24px;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+ }
+/*Animation */
+.ani3_Img{
+    transform: scale(0.5);
+}
+.ani3_Img.active{
+    transition: 3s all ease;
+    transform: scale(1);
+}
+.ani3_p{
+   position: relative;
+   top: 200px; 
+}
+.ani3_p.active{
+    transition: 2s all ease;
+    top: 0px;
+}
+.learn_3{
+    position: relative;
+    top: -200px; 
+ }
+ .learn_3.active{
+     transition: 2s all ease;
+     top: 0px;
+ }
+
+
+@media(max-width:1000px){
+    .grow{
+        height: auto;
+    }
+    .grow_Holder{
+        display: block;
+    }
+    .grow_Box{
+        width: 100%;
+    }
+    .grow_Box p{
+        width: 100%;
+        font-size: 18px;
+    }
+}
+
+
+
+ /* Section 9 */
+ .start_Mining{
+    width: 100%;
+    height: 300px;
+    background-image: url("/images/newsletter-box.png");
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat;
+    margin-bottom: 30px;
+ }
+ .start_Mining_Holder{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+ }
+ .start_Mining_Box1{
+    width: 30%;
+    color: white;
+    padding: 20px;
+
+ }
+ .start_Mining_Box1 p{
+    margin-top: 40px;
+ }
+
+ .start_Mining_Box2{
+    padding-top: 70px;
+    width: 60%;
+    padding-right: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+ }
+ .start_Mining_Box2 input{
+    width: 100%;
+    height: 30px;
+    background:rgba(21, 121, 220, 0.701);
+    outline: none;
+    border: rgba(21, 121, 220, 0.701);;
+    border-bottom: 1px solid white;
+    padding-left: 10px;
+    font-size: 20px;
+    color: white;
+
+ }
+ .start_Mining_Box2 ::placeholder{
+    color: white; /* Firefox */
+    opacity: 1;
+ }
+ .start_Mining_Box2 :-ms-input-placeholder{
+    color: white; /*Internet Explorer */
+ }
+ .start_Mining_Box2 ::-ms-input-placeholder{
+    color: white; /*MS Edge */
+ }
+ .subscribe{
+    width: 15%;
+    height: 60px;
+    border-radius: 40px;
+    background-color: white;
+    font-size: 18px;
+    padding: 0px 20px 0px 20px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+ }
+/*Animation */
+ .start_ani{
+    position: relative;
+    top: 200px; 
+ }
+ .start_ani.active{
+     transition: 2s all ease;
+     top: 0px;
+ }
+ .sub_ani{
+     position: relative;
+     top: 200px; 
+  }
+  .sub_ani.active{
+      transition: 2s all ease;
+      top: 0px;
+  }
+
+
+@media(max-width:1000px){
+    .start_Mining{
+        height: auto;
+        padding: 0px 0px 30px 10px;
+        font-size: 18px;
+    }
+    .start_Mining_Holder{
+        display: block;
+        height: auto;
+    }
+    .start_Mining_Box1{
+        width: 100%;
+    }
+   .start_Mining_Box1 p{
+    font-size: 20px;
+    margin-top: -2px;
+    line-height: 25px;
+   }
+    .start_Mining_Box2{
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+    .start_Mining_Box2 input{
+        width: 90%;
+    }
+    .subscribe{
+        width: 40% !important;
+        padding: 0px 10px px 10px !important;
+        font-size: 18px !important;
+        margin-top: 10px;
+        height: 50px;
+    }
+}
+
+
+ /*Footer */
+ .footer{
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    margin-top: 50px !important;
+ }
+ .footer_Holder{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .footer_Box{
+    width: 25%;
+    color: white;
+    font-size: 16px;
+ }
+ 
+ .footer_Box_nav_Hold{
+    width: 50%;
+    margin-right: 100px;
+    margin-top: 50px;
+    text-align: center !important;
+ }
+ .footer_Box li{
+    margin-top: 20px;
+ }
+ .footer_Box a{
+    color: white;
+ }
+ .foot_RightBox{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90px;
+ }
+ .foot_RightBox img{
+    margin-left: 3px;
+ }
+
+ .foot_Socials{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+ }
+ .foot_2{
+   width: 100%;
+   height: 100px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10px;
+ }
+
+ .foot_2_CopyRight{
+    color: white;
+    font-size: 18px;
+ }
+ .foot_2_Social{
+    color: white;
+ }
+ .foot_2_Social i{
+    margin-left: 3px;
+ }
+.foot_2_Social a{
+    color: white;
+}
+
+/*Animation*/
+.animate_foot{
+    position: relative;
+    top: 100px;
+}
+.animate_foot.active{
+    transition: 2s all ease;
+    top: 0px !important;
+}
+
+
+@media(max-width:1000px){
+    .footer{
+        height: auto;
+    }
+    .foot_logo img{
+        width: 40%;
+    }
+    .footer_Holder, .foot_2,
+    .footer_Box,.footer_Box_nav_Hold{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .visa{
+        margin-top: 50px;
+    }
+    .foot_2{
+        margin-top: 30px;
+    }
+    .foot_2_CopyRight{
+        font-size: 14px;
+    }
+}
