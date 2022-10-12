@@ -276,9 +276,10 @@ margin-top: 20px;
    /*Animation start */
    .section_2_ani{
     position: relative;
-   margin-top: 600px; /*Animation purpose */
+    margin-top: 600px; /*Animation purpose */
 
    }
+
 .section_2_ani.active{
     transition: 2s all ease;
     margin-top: 0px;
@@ -299,9 +300,10 @@ margin-top: 20px;
     justify-content: center;
     color: blue;
 }
-.section_2_Text{
-width: auto;
-color: white;
+    .section_2_Text{
+    width: auto;
+    color: white;
+    margin-left: 10px;
 }
 @media(max-width:1000px){
     .section_2{
@@ -496,10 +498,12 @@ color: white;
     /*For animation */
     position: relative;
     top: 100px;
+    opacity: 0;
 }
 .calculate.active{
-    transition: 3s all ease;
+    transition: 2s all ease;
     top: 0px;
+    opacity: 1;
 }
 
 .estimate{
@@ -565,10 +569,10 @@ color: white;
     padding: 50px;
     text-align: center !important;
 }
-.hover{
+.hoverMe{
     background-color: white !important;
 }
-.hover:hover{
+.hoverMe:hover{
     background-color: navy !important;
 }
 .tradeBox_Icon{
@@ -605,8 +609,6 @@ color: white;
     color: blue;
     padding: 15px;
 }
-
-
 .tradeBox:hover>.startMining{
     background-color: blue;
     color:white;
@@ -656,7 +658,7 @@ color: white;
   .startMining_2{
     width: 40%;
     margin: auto;
-    margin-top: -40px;
+    margin-top: -60px;
     border-radius: 40px;
     background-color: white;
     display: flex;
@@ -686,10 +688,14 @@ color: white;
     border: 1px solid grey;
   }
 
-
   .tradeBox:hover>.startMining_2{
     display: block;
     z-index: 1000 !important;
+  }
+  
+  .tradeBox:hover .startMining_Icon{
+    display: none !important;
+    z-index: 0 !important;
   }
  
   /*box 3 */
@@ -730,6 +736,7 @@ color: white;
       position: relative;
 
   }
+
   .startMining_3_Icon{
     width: 50px;
     height: 50px;
@@ -742,7 +749,19 @@ color: white;
   }
   .tradeBox:hover>.startMining_3{
     display: block;
-    z-index: 1000 !important;
+    z-index: 1000;
+  }
+
+  .tradeBox:hover .startMining_3_Icon{
+    display: none !important;
+   z-index:0 !important;
+  }
+ 
+  @media(max-width:1000px){
+    .startMining_Icon, .startMining_3_Icon,
+    .startMining_2, .startMining_3{
+        margin-top: 5px;
+    }
   }
 
  /*section 6 */
@@ -759,10 +778,12 @@ color: white;
     /*For animation */
     position: relative;
     top:200px;
+    opacity: 0;
  }
  .make_Text.active{
     transition: 2s all ease;
     top:0px;
+    opacity: 1;
  }
 
  .make_Sentimate_Holder{
@@ -780,10 +801,12 @@ color: white;
     /*For animation */
     position: relative;
     top: 200px;
+    opacity: 0;
 }
 .make_ani.active{
     transition: 2s all ease;
     top: 0px;
+    opacity: 1;
 }
  
  .make_Sentimate_Box p{
@@ -805,10 +828,12 @@ color: white;
 /*Animation */
 .ani_Img{
     transform: scale(0.5);
+    opacity: 0;
 }
 .ani_Img.active{
     transition: 3s all ease;
     transform: scale(1);
+    opacity: 1;
 }
 
  
@@ -840,7 +865,8 @@ color: white;
         font-size: 20px !important;
     }
     .make_Sentimate_Box img{
-        width: 100%;        margin-top: -30px;
+        width: 100%;       
+        margin-top: -30px;
     }
 }
  
@@ -893,26 +919,32 @@ color: white;
 /*Animation */
 .ani2_Img{
     transform: scale(0.5);
+    opacity: 0;
 }
 .ani2_Img.active{
     transition: 3s all ease;
     transform: scale(1);
+    opacity: 1;
 }
 .ani_p{
    position: relative;
    top: -200px; 
+   opacity: 0;
 }
 .ani_p.active{
     transition: 2s all ease;
     top: 0px;
+    opacity: 1;
 }
 .learn_2{
     position: relative;
     top: 200px; 
+    opacity: 0;
  }
  .learn_2.active{
      transition: 2s all ease;
      top: 0px;
+     opacity: 1;
  }
 
 
@@ -966,26 +998,32 @@ color: white;
 /*Animation */
 .ani3_Img{
     transform: scale(0.5);
+    opacity: 0;
 }
 .ani3_Img.active{
     transition: 3s all ease;
     transform: scale(1);
+    opacity: 1;
 }
 .ani3_p{
    position: relative;
    top: 200px; 
+   opacity: 0;
 }
 .ani3_p.active{
     transition: 2s all ease;
     top: 0px;
+    opacity: 1;
 }
 .learn_3{
     position: relative;
     top: -200px; 
+    opacity: 0;
  }
  .learn_3.active{
      transition: 2s all ease;
      top: 0px;
+     opacity: 1;
  }
 
 
@@ -1079,18 +1117,22 @@ color: white;
  .start_ani{
     position: relative;
     top: 200px; 
+    opacity: 0;
  }
  .start_ani.active{
      transition: 2s all ease;
      top: 0px;
+     opacity: 1;
  }
  .sub_ani{
      position: relative;
      top: 200px; 
+     opacity: 0;
   }
   .sub_ani.active{
       transition: 2s all ease;
       top: 0px;
+      opacity: 1;
   }
 
 
